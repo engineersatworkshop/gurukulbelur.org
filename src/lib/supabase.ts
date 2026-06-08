@@ -13,6 +13,7 @@ export interface GalleryRecord {
   id: string;
   image_url: string;
   caption: string;
+  album?: string;
   created_at: string;
 }
 

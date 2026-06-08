@@ -51,7 +51,7 @@ export default function NoticeBoard({ notices }: NoticeBoardProps) {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-5 sticky top-24"
+            className="lg:col-span-5 lg:sticky lg:top-24 z-20 mb-8 lg:mb-0"
           >
             <div className="inline-flex items-center justify-center p-3 bg-white/10 rounded-full mb-6">
               <Bell className="text-brand-gold w-6 h-6" />

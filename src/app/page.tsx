@@ -33,7 +33,7 @@ export default function Home() {
           >
             <iframe
               title="Gurukul School Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.527633633804!2d88.3510526759728!3d22.634125779446294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d31d45c6023%3A0x6bfae04bcfa724fb!2sBelur%20Math!5e0!3m2!1sen!2sin!4v1703120000000!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?q=Gurukul%20School%2C%20J993%2BQ8V%2C%20Girish%20Ghosh%20Rd%2C%20Bhot%20Bagan%2C%20Belur%20Math%2C%20Liluah%2C%20Howrah%2C%20West%20Bengal%20711202%2C%20India&t=&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="450"
               style={{ border: 0, borderRadius: '14px' }}

@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Image as ImageIcon, X } from 'lucide-react';
+import Image from 'next/image';
 import type { GalleryRecord } from '@/lib/supabase';
 
 interface GalleryProps {
@@ -11,13 +12,25 @@ interface GalleryProps {
 
 export default function Gallery({ photos }: GalleryProps) {
   const [selectedPhoto, setSelectedPhoto] = useState<GalleryRecord | null>(null);
+  const [activeAlbum, setActiveAlbum] = useState<string>('All');
+
+  // Compute unique albums
+  const albums = useMemo(() => {
+    const unique = Array.from(new Set(photos.map(p => p.album || 'General')));
+    return ['All', ...unique.sort()];
+  }, [photos]);
+
+  const filteredPhotos = useMemo(() => {
+    if (activeAlbum === 'All') return photos;
+    return photos.filter(p => (p.album || 'General') === activeAlbum);
+  }, [photos, activeAlbum]);
 
   return (
     <section id="gallery" className="py-24 bg-white relative min-h-screen">
       <div className="container mx-auto px-4">
         
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-8">
           <div>
             <span className="text-brand-gold font-bold tracking-widest text-sm uppercase block mb-3">Memories</span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-navy">Photo Gallery</h2>
@@ -25,10 +38,29 @@ export default function Gallery({ photos }: GalleryProps) {
           </div>
         </div>
 
+        {/* Albums Filter */}
+        {albums.length > 2 && (
+          <div className="flex flex-wrap gap-2 mb-10">
+            {albums.map(album => (
+              <button
+                key={album}
+                onClick={() => setActiveAlbum(album)}
+                className={`px-6 py-2 rounded-full font-bold text-sm transition-all duration-300 ${
+                  activeAlbum === album 
+                    ? 'bg-brand-navy text-white shadow-md' 
+                    : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+                }`}
+              >
+                {album}
+              </button>
+            ))}
+          </div>
+        )}
+
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <AnimatePresence>
-            {photos.map((photo) => (
+            {filteredPhotos.map((photo) => (
               <motion.div
                 key={photo.id}
                 layoutId={`photo-container-${photo.id}`}
@@ -36,16 +68,22 @@ export default function Gallery({ photos }: GalleryProps) {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 onClick={() => setSelectedPhoto(photo)}
-                className="relative aspect-4/3 rounded-2xl overflow-hidden group shadow-md cursor-pointer"
+                className="relative aspect-4/3 rounded-2xl overflow-hidden group shadow-md cursor-pointer bg-gray-100"
               >
-                <motion.img 
+                <motion.div 
                   layoutId={`photo-${photo.id}`}
-                  src={photo.image_url} 
-                  alt={photo.caption}
                   whileHover={{ scale: 1.06 }}
                   transition={{ duration: 0.4 }}
-                  className="w-full h-full object-cover"
-                />
+                  className="w-full h-full relative"
+                >
+                  <Image 
+                    src={photo.image_url} 
+                    alt={photo.caption}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
+                  />
+                </motion.div>
 
                 {/* Caption Overlay */}
                 <motion.div 
@@ -59,12 +97,12 @@ export default function Gallery({ photos }: GalleryProps) {
               </motion.div>
             ))}
           </AnimatePresence>
-        </div>
+        </motion.div>
 
-        {photos.length === 0 && (
-          <div className="text-center py-20 bg-gray-50 rounded-3xl border border-gray-100">
+        {filteredPhotos.length === 0 && (
+          <div className="text-center py-20 bg-gray-50 rounded-3xl border border-gray-100 mt-8">
             <ImageIcon className="mx-auto text-gray-300 w-16 h-16 mb-4" />
-            <p className="text-gray-500 font-serif text-xl">No photos in the gallery yet.</p>
+            <p className="text-gray-500 font-serif text-xl">No photos in this album yet.</p>
           </div>
         )}
 

@@ -41,7 +41,7 @@ export default function AdminNoticesPage() {
     e.preventDefault();
     setIsSubmitting(true);
     setError(null);
-    
+
     try {
       const formData = new FormData(e.currentTarget);
       const title = formData.get('title') as string;
@@ -70,12 +70,13 @@ export default function AdminNoticesPage() {
         }
 
         const uploadResult = await uploadRes.json();
+        console.log("Cloudinary Upload Result:", uploadResult);
         pdfUrl = uploadResult.secure_url;
       }
 
       // 2. Save notice to Supabase via Server Action
       const res = await addNoticeAction(title, description, pdfUrl);
-      
+
       if (res?.error) {
         throw new Error(res.error);
       }
@@ -92,12 +93,12 @@ export default function AdminNoticesPage() {
 
   const handleDownload = (url: string, title: string) => {
     const downloadApiUrl = `/api/download?url=${encodeURIComponent(url)}&name=${encodeURIComponent(title)}`;
-    
+
     const iframe = document.createElement('iframe');
     iframe.style.display = 'none';
     iframe.src = downloadApiUrl;
     document.body.appendChild(iframe);
-    
+
     setTimeout(() => {
       document.body.removeChild(iframe);
     }, 5000);
@@ -143,8 +144,8 @@ export default function AdminNoticesPage() {
             <form onSubmit={handleAddNotice} className="space-y-4 max-w-2xl">
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-1">Notice Title</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   name="title"
                   required
                   placeholder="e.g. Annual Sports Meet 2026"
@@ -153,7 +154,7 @@ export default function AdminNoticesPage() {
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-1">Description</label>
-                <textarea 
+                <textarea
                   name="description"
                   required
                   rows={4}
@@ -162,21 +163,21 @@ export default function AdminNoticesPage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-1">Attach File (PDF or Image, Optional)</label>
+                <label className="block text-sm font-semibold text-gray-700 mb-1">Attach PDF (Optional)</label>
                 <div className="flex items-center space-x-2">
                   <FileUp className="text-gray-400" />
-                  <input 
-                    type="file" 
+                  <input
+                    type="file"
                     name="pdf"
-                    accept="application/pdf,image/*"
+                    accept="application/pdf"
                     onChange={handleFileChange}
                     className="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-brand-gold/10 file:text-brand-navy hover:file:bg-brand-gold/20"
                   />
                 </div>
               </div>
-              
+
               {error && <p className="text-red-500 text-sm font-medium">{error}</p>}
-              
+
               <div className="pt-4 flex justify-end">
                 <button
                   type="button"
@@ -218,7 +219,7 @@ export default function AdminNoticesPage() {
                       <div className="flex items-center space-x-4 mt-2 text-xs text-gray-400">
                         <span>{new Date(notice.created_at).toLocaleDateString()}</span>
                         {notice.pdf_url && (
-                          <button 
+                          <button
                             onClick={() => handleDownload(notice.pdf_url!, notice.title)}
                             className="text-blue-500 hover:underline flex items-center font-medium"
                           >
