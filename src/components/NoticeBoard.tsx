@@ -85,8 +85,10 @@ export default function NoticeBoard({ notices }: NoticeBoardProps) {
             className="lg:col-span-7 flex flex-col space-y-4"
           >
             {notices.length === 0 ? (
-              <div className="text-gray-400 p-6 bg-white/5 border border-white/10 rounded-2xl">
-                No notices available at this time.
+              <div className="flex flex-col items-center justify-center p-12 bg-white/5 border border-white/10 rounded-2xl text-center">
+                <Bell className="text-gray-500 w-12 h-12 mb-4 opacity-50" />
+                <h3 className="text-xl font-serif text-gray-300 font-bold mb-2">No Active Notices</h3>
+                <p className="text-gray-400">There are no new announcements at this time. Please check back later.</p>
               </div>
             ) : (
               notices.map((notice) => {

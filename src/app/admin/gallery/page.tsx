@@ -6,6 +6,8 @@ import { Image as ImageIcon, Plus, Trash2, Upload } from 'lucide-react';
 import imageCompression from 'browser-image-compression';
 import { saveGalleryImageAction, deleteGalleryImageAction } from '@/app/actions/gallery';
 import { getGalleryImages, GalleryRecord } from '@/lib/supabase';
+import toast from 'react-hot-toast';
+import Image from 'next/image';
 
 export default function AdminGalleryPage() {
   const [images, setImages] = useState<GalleryRecord[]>([]);
@@ -31,10 +33,12 @@ export default function AdminGalleryPage() {
     const file = e.target.files?.[0];
     if (file) {
       if (file.size > 10 * 1024 * 1024) {
-        setError('The file size is exceeding 10 mb size it should be lower than 10mb');
+        const msg = 'File size exceeds 10MB limit.';
+        setError(msg);
+        toast.error(msg);
         e.target.value = '';
-        setImageFile(null);
         setPreviewUrl(null);
+        setImageFile(null);
         return;
       }
       setError(null);
@@ -97,12 +101,14 @@ export default function AdminGalleryPage() {
         throw new Error(dbRes.error);
       }
 
+      toast.success('Photo uploaded successfully!');
       setIsAdding(false);
       setPreviewUrl(null);
       setImageFile(null);
       await fetchImages();
     } catch (err: any) {
       setError(err.message || 'An unexpected error occurred');
+      toast.error(err.message || 'An unexpected error occurred');
     } finally {
       setIsSubmitting(false);
     }
@@ -112,8 +118,9 @@ export default function AdminGalleryPage() {
     if (window.confirm('Are you sure you want to delete this image?')) {
       const res = await deleteGalleryImageAction(id);
       if (res?.error) {
-        alert(res.error);
+        toast.error(res.error);
       } else {
+        toast.success('Photo deleted successfully!');
         await fetchImages();
       }
     }
@@ -226,8 +233,8 @@ export default function AdminGalleryPage() {
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {images.map((photo) => (
-                  <div key={photo.id} className="relative aspect-4/3 rounded-xl overflow-hidden group border border-gray-200">
-                    <img src={photo.image_url} alt={photo.caption} className="w-full h-full object-cover" />
+                  <div key={photo.id} className="relative aspect-4/3 rounded-xl overflow-hidden group border border-gray-200 bg-gray-100">
+                    <Image src={photo.image_url} alt={photo.caption} fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity">
                       <p className="text-white font-medium text-sm truncate">{photo.caption}</p>
                     </div>

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const navLinks = [
@@ -36,8 +37,8 @@ export default function Navbar() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center space-x-3">
-          <div className="w-14 h-14 flex items-center justify-center">
-            <img src="/main logopng.png" alt="Gurukul Logo" className="w-full h-full object-contain" />
+          <div className="w-14 h-14 flex items-center justify-center relative">
+            <Image src="/main logopng.png" alt="Gurukul Logo" width={56} height={56} className="w-full h-full object-contain" />
           </div>
           <div>
             <h1 className="font-serif text-lg md:text-xl lg:text-2xl font-bold leading-tight" style={{ color: '#1B3178' }}>

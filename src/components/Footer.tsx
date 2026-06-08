@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -9,8 +10,8 @@ export default function Footer() {
           {/* Brand Block */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 flex items-center justify-center">
-                <img src="/main logopng.png" alt="Gurukul Logo" className="w-full h-full object-contain" />
+              <div className="w-12 h-12 flex items-center justify-center relative">
+                <Image src="/main logopng.png" alt="Gurukul Logo" width={48} height={48} className="w-full h-full object-contain" />
               </div>
               <h2 className="font-serif text-xl md:text-2xl font-bold text-white leading-tight">Gurukul English Medium Co-Ed School</h2>
             </div>

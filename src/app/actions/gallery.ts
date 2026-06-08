@@ -1,7 +1,6 @@
 'use server';
 
 import { supabase } from '@/lib/supabase';
-import { uploadFileToCloudinary } from '@/lib/cloudinary';
 import { revalidatePath } from 'next/cache';
 
 export async function saveGalleryImageAction(image_url: string, caption: string) {

@@ -1,7 +1,6 @@
 'use server';
 
 import { supabase } from '@/lib/supabase';
-import { uploadFileToCloudinary } from '@/lib/cloudinary';
 import { revalidatePath } from 'next/cache';
 
 export async function addNoticeAction(title: string, description: string, pdf_url: string | null) {

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FileText, Plus, Trash2, FileUp } from 'lucide-react';
 import { addNoticeAction, deleteNoticeAction } from '@/app/actions/notices';
 import { getNotices, NoticeRecord } from '@/lib/supabase';
+import toast from 'react-hot-toast';
 
 export default function AdminNoticesPage() {
   const [notices, setNotices] = useState<NoticeRecord[]>([]);
@@ -28,7 +29,9 @@ export default function AdminNoticesPage() {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file && file.size > 10 * 1024 * 1024) {
-      setError('The file size is exceeding 10 mb size it should be lower than 10mb');
+      const msg = 'File size exceeds 10MB limit.';
+      setError(msg);
+      toast.error(msg);
       e.target.value = '';
       setPdfFile(null);
       return;
@@ -81,11 +84,13 @@ export default function AdminNoticesPage() {
         throw new Error(res.error);
       }
 
+      toast.success('Notice published successfully!');
       setIsAdding(false);
       setPdfFile(null);
       await fetchNotices();
     } catch (err: any) {
       setError(err.message || 'An unexpected error occurred');
+      toast.error(err.message || 'An unexpected error occurred');
     } finally {
       setIsSubmitting(false);
     }
@@ -108,8 +113,9 @@ export default function AdminNoticesPage() {
     if (window.confirm('Are you sure you want to delete this notice?')) {
       const res = await deleteNoticeAction(id);
       if (res?.error) {
-        alert(res.error);
+        toast.error(res.error);
       } else {
+        toast.success('Notice deleted successfully!');
         await fetchNotices();
       }
     }

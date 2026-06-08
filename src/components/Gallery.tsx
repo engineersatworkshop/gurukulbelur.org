@@ -119,7 +119,8 @@ export default function Gallery({ photos }: GalleryProps) {
             onClick={() => setSelectedPhoto(null)}
           >
             <button 
-              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+              aria-label="Close lightbox"
+              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold rounded-full"
               onClick={() => setSelectedPhoto(null)}
             >
               <X size={32} />

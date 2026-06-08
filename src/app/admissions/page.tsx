@@ -312,7 +312,6 @@ export default function AdmissionsPage() {
                 {/* Discipline Guidelines */}
                 <div className="bg-red-50/30 border border-red-100 rounded-3xl p-8">
                   <h3 className="font-serif text-2xl font-bold text-red-900 mb-6 flex items-center gap-2">
-                    <img src="/favicon.svg" alt="" className="w-6 h-6 hidden" />
                     <ShieldAlert className="text-red-700 shrink-0" />
                     Discipline Code of Conduct
                   </h3>

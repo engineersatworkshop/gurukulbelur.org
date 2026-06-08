@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Heart, Lightbulb, Book } from 'lucide-react';
+import Image from 'next/image';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -50,7 +51,7 @@ export default function About() {
 
             {/* Building Image Box */}
             <div className="aspect-4/5 md:aspect-square w-full bg-brand-navy rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center relative">
-              <img src="/Building.jpg" alt="Gurukul Building" className="w-full h-full object-cover" />
+              <Image src="/Building.jpg" alt="Gurukul Building" width={800} height={800} className="w-full h-full object-cover" />
             </div>
             
             {/* Background Accent Element */}
@@ -115,25 +116,25 @@ export default function About() {
               {
                 role: "FOUNDER & PRINCIPAL",
                 name: "Mr. Arun Kumar Singh",
-                avatar: <img src="/management head/Mr. Arun Kumar Singh.jpg" alt="Mr. Arun Kumar Singh" className="w-full h-full object-cover rounded-full" />,
+                avatar: <Image src="/management head/Mr. Arun Kumar Singh.jpg" alt="Mr. Arun Kumar Singh" width={112} height={112} className="w-full h-full object-cover rounded-full" />,
                 quote: "“Mr. Arun Kumar Singh developed an intense desire to educate young minds to grow up to be perfect citizens and face the challenges of tomorrow, laying a firm foundation for Gurukul Co-Ed School looking 'Beyond the Lines'.”"
               },
               {
                 role: "THE PRESIDENT",
                 name: "Mrs. Malti Devi Singh",
-                avatar: <img src="/management head/Mrs. Malti Devi Singh.jpg" alt="Mrs. Malti Devi Singh" className="w-full h-full object-cover rounded-full" />,
+                avatar: <Image src="/management head/Mrs. Malti Devi Singh.jpg" alt="Mrs. Malti Devi Singh" width={112} height={112} className="w-full h-full object-cover rounded-full" />,
                 quote: "“Mrs. Malti Devi Singh had a dream of establishing a school with a blend of ethic values and modern ideas. From a very tender age, she had shown what could be achieved with intelligence, dedication, and self-discipline.”"
               },
               {
                 role: "THE CHAIRMAN",
                 name: "Mr. D. K. Singh",
-                avatar: <img src="/management head/Mr. D. K. Singh.jpg" alt="Mr. D. K. Singh" className="w-full h-full object-cover rounded-full" />,
+                avatar: <Image src="/management head/Mr. D. K. Singh.jpg" alt="Mr. D. K. Singh" width={112} height={112} className="w-full h-full object-cover rounded-full" />,
                 quote: "“From his early age, he has shown what could be achieved with intelligence, dedication, and hard work coupled with truth. His ideals and character are the aim of true education and the guiding force of the school.”"
               },
               {
                 role: "RECTOR",
                 name: "Mr. Manish Kumar Singh",
-                avatar: <img src="/management head/Mr. Manish Kumar Singh.jpg" alt="Mr. Manish Kumar Singh" className="w-full h-full object-cover rounded-full" />,
+                avatar: <Image src="/management head/Mr. Manish Kumar Singh.jpg" alt="Mr. Manish Kumar Singh" width={112} height={112} className="w-full h-full object-cover rounded-full" />,
                 quote: "“We believe in a joyful experiential learning system wherein each child is encouraged to participate in a myriad of activities to offer emotional balance, critical thinking, and accept failure graciously!”"
               }
             ].map((leader, i) => (
@@ -146,7 +147,7 @@ export default function About() {
                 whileHover={{ y: -5 }}
                 className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col sm:flex-row items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-6 hover:shadow-md transition-all duration-300"
               >
-                <div className="w-20 h-20 rounded-full bg-brand-offwhite flex items-center justify-center text-3xl shadow-inner shrink-0 p-1 border-2 border-brand-gold">
+                <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-brand-offwhite flex items-center justify-center text-3xl shadow-inner shrink-0 p-1.5 border-2 border-brand-gold">
                   {leader.avatar}
                 </div>
                 <div>
