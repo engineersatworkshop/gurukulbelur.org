@@ -1,0 +1,114 @@
+{
+  "node": {
+    "002e26fd786cdce5e7ae4a46b806e5dc0cc08db351": {
+      "workers": {
+        "app/admin/login/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/notices/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%2C%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%2C%5B%7B%22id%22%3A%2240cd5bac1c93c759cf400cdf23e8a0d62be0c3cfe1%22%2C%22exportedName%22%3A%22deleteNoticeAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%7D%2C%7B%22id%22%3A%2270f2e00679205dfab789896cdd5407f1b34a79b085%22%2C%22exportedName%22%3A%22addNoticeAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/gallery/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%2C%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%2C%5B%7B%22id%22%3A%2240406e7d08af7b43cc119de18f2643d073c495bfc5%22%2C%22exportedName%22%3A%22deleteGalleryImageAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%7D%2C%7B%22id%22%3A%2260f11b933980d223b8ca594d962f52ccdbccc33dd1%22%2C%22exportedName%22%3A%22saveGalleryImageAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/login/page": "action-browser",
+        "app/admin/page": "action-browser",
+        "app/admin/notices/page": "action-browser",
+        "app/admin/gallery/page": "action-browser"
+      },
+      "filename": "../F:\\Gurukul\\src\\app\\actions\\auth.ts",
+      "exportedName": "logoutAction"
+    },
+    "40034713739ba6af26d206b02b7afb261a07e65fd2": {
+      "workers": {
+        "app/admin/login/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/notices/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%2C%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%2C%5B%7B%22id%22%3A%2240cd5bac1c93c759cf400cdf23e8a0d62be0c3cfe1%22%2C%22exportedName%22%3A%22deleteNoticeAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%7D%2C%7B%22id%22%3A%2270f2e00679205dfab789896cdd5407f1b34a79b085%22%2C%22exportedName%22%3A%22addNoticeAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/gallery/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%2C%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%2C%5B%7B%22id%22%3A%2240406e7d08af7b43cc119de18f2643d073c495bfc5%22%2C%22exportedName%22%3A%22deleteGalleryImageAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%7D%2C%7B%22id%22%3A%2260f11b933980d223b8ca594d962f52ccdbccc33dd1%22%2C%22exportedName%22%3A%22saveGalleryImageAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/login/page": "action-browser",
+        "app/admin/page": "action-browser",
+        "app/admin/notices/page": "action-browser",
+        "app/admin/gallery/page": "action-browser"
+      },
+      "filename": "../F:\\Gurukul\\src\\app\\actions\\auth.ts",
+      "exportedName": "loginAction"
+    },
+    "40cd5bac1c93c759cf400cdf23e8a0d62be0c3cfe1": {
+      "workers": {
+        "app/admin/notices/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%2C%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%2C%5B%7B%22id%22%3A%2240cd5bac1c93c759cf400cdf23e8a0d62be0c3cfe1%22%2C%22exportedName%22%3A%22deleteNoticeAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%7D%2C%7B%22id%22%3A%2270f2e00679205dfab789896cdd5407f1b34a79b085%22%2C%22exportedName%22%3A%22addNoticeAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/notices/page": "action-browser"
+      },
+      "filename": "../F:\\Gurukul\\src\\app\\actions\\notices.ts",
+      "exportedName": "deleteNoticeAction"
+    },
+    "70f2e00679205dfab789896cdd5407f1b34a79b085": {
+      "workers": {
+        "app/admin/notices/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%2C%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%2C%5B%7B%22id%22%3A%2240cd5bac1c93c759cf400cdf23e8a0d62be0c3cfe1%22%2C%22exportedName%22%3A%22deleteNoticeAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%7D%2C%7B%22id%22%3A%2270f2e00679205dfab789896cdd5407f1b34a79b085%22%2C%22exportedName%22%3A%22addNoticeAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cnotices.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/notices/page": "action-browser"
+      },
+      "filename": "../F:\\Gurukul\\src\\app\\actions\\notices.ts",
+      "exportedName": "addNoticeAction"
+    },
+    "40406e7d08af7b43cc119de18f2643d073c495bfc5": {
+      "workers": {
+        "app/admin/gallery/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%2C%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%2C%5B%7B%22id%22%3A%2240406e7d08af7b43cc119de18f2643d073c495bfc5%22%2C%22exportedName%22%3A%22deleteGalleryImageAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%7D%2C%7B%22id%22%3A%2260f11b933980d223b8ca594d962f52ccdbccc33dd1%22%2C%22exportedName%22%3A%22saveGalleryImageAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/gallery/page": "action-browser"
+      },
+      "filename": "../F:\\Gurukul\\src\\app\\actions\\gallery.ts",
+      "exportedName": "deleteGalleryImageAction"
+    },
+    "60f11b933980d223b8ca594d962f52ccdbccc33dd1": {
+      "workers": {
+        "app/admin/gallery/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%7B%22id%22%3A%22002e26fd786cdce5e7ae4a46b806e5dc0cc08db351%22%2C%22exportedName%22%3A%22logoutAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%2C%7B%22id%22%3A%2240034713739ba6af26d206b02b7afb261a07e65fd2%22%2C%22exportedName%22%3A%22loginAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cauth.ts%22%7D%5D%5D%2C%5B%22F%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%2C%5B%7B%22id%22%3A%2240406e7d08af7b43cc119de18f2643d073c495bfc5%22%2C%22exportedName%22%3A%22deleteGalleryImageAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%7D%2C%7B%22id%22%3A%2260f11b933980d223b8ca594d962f52ccdbccc33dd1%22%2C%22exportedName%22%3A%22saveGalleryImageAction%22%2C%22filename%22%3A%22..%2FF%3A%5C%5CGurukul%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cgallery.ts%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/gallery/page": "action-browser"
+      },
+      "filename": "../F:\\Gurukul\\src\\app\\actions\\gallery.ts",
+      "exportedName": "saveGalleryImageAction"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "I6fLWPxZ4yNTDGYUskTkSUKfw9Q2FFLTJ79b4UekU3E="
+}

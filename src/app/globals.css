@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Exact colors from the brochure cover image ── */
+  --color-brand-navy:    #1B3178; /* Dark navy — heading text in brochure */
+  --color-brand-gold:    #e8a020; /* Gold accent — trophy/award color */
+  --color-brand-red:     #E82529; /* Exact scarlet red — top half of cover */
+  --color-brand-blue:    #29ABE2; /* Exact sky blue  — bottom half of cover */
+  --color-brand-offwhite:#f7f5f0;
+
+  /* Light tint backgrounds (used as section/card backgrounds) */
+  --color-brand-bg-blue:  #E8F7FD; /* Very light sky blue tint */
+  --color-brand-bg-yellow:#fefdf0;
+  --color-brand-bg-green: #f0fdf4;
+  --color-brand-bg-red:   #FEF0F0; /* Very light red tint */
+
+  --font-serif: var(--font-serif);
+  --font-sans:  var(--font-sans);
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans text-gray-800 bg-white m-0 p-0 antialiased; }
+  h1, h2, h3, h4, h5, h6 { @apply font-serif; }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   bg-doodles  ─  multi-color school items (light sections)
+   Items: graduation cap (red) · open book (blue) · pencil (red) ·
+          ruler (blue) · star (navy) · magnifying glass (red) ·
+          lightbulb (blue) · trophy (navy)
+──────────────────────────────────────────────────────────────────────────────*/
+@utility bg-doodles {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220' fill='none'%3E%3C!-- Graduation Cap --%3E%3Cpath d='M25 45L55 33L85 45L55 57ZM55 57L55 78M70 51L72 70C72 73 68 73 68 70' stroke='%23E82529' stroke-opacity='0.13' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C!-- Open Book --%3E%3Cpath d='M90 60L90 35C100 32 110 35 110 35C110 35 120 32 130 35L130 60C120 57 110 60 110 60C110 60 100 57 90 60ZM110 35L110 60M96 42L108 42M96 48L108 48M112 42L124 42M112 48L124 48' stroke='%2329ABE2' stroke-opacity='0.13' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C!-- Pencil --%3E%3Cpath d='M165 22L178 35L167 60L154 47ZM183 38L170 51M167 60L165 67L172 64Z' stroke='%23E82529' stroke-opacity='0.11' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C!-- Ruler --%3E%3Cpath d='M14 105L14 162L30 162L30 105ZM14 115L20 115M14 125L26 125M14 135L20 135M14 145L26 145M14 155L20 155' stroke='%2329ABE2' stroke-opacity='0.11' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C!-- 5-point Star --%3E%3Cpath d='M196 86L200 99L214 99L203 107L207 120L196 112L185 120L189 107L178 99L192 99Z' stroke='%231B3178' stroke-opacity='0.10' stroke-width='1.6' stroke-linejoin='round'/%3E%3C!-- Magnifying Glass --%3E%3Ccircle cx='55' cy='148' r='17' stroke='%23E82529' stroke-opacity='0.12' stroke-width='1.6'/%3E%3Cline x1='67' y1='160' x2='80' y2='173' stroke='%23E82529' stroke-opacity='0.12' stroke-width='3.2'/%3E%3C!-- Lightbulb --%3E%3Cpath d='M151 113C151 102 161 97 171 102C181 107 181 120 174 127L171 135L161 135L158 127C151 120 151 124 151 113ZM159 135L159 141M173 135L173 141M159 141L173 141' stroke='%2329ABE2' stroke-opacity='0.12' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C!-- Trophy --%3E%3Cpath d='M82 205L138 205L133 195L133 183C133 175 126 169 118 167L118 160L102 160L102 167C94 169 87 175 87 183L87 195ZM87 177L77 177C72 177 70 170 77 165M133 177L143 177C148 177 150 170 143 165' stroke='%231B3178' stroke-opacity='0.10' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   bg-doodles-white  ─  white school items (for red/blue/dark sections)
+   Matches the white outline doodles visible on the brochure red background
+──────────────────────────────────────────────────────────────────────────────*/
+@utility bg-doodles-white {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220' fill='none'%3E%3C!-- Graduation Cap --%3E%3Cpath d='M25 45L55 33L85 45L55 57ZM55 57L55 78M70 51L72 70C72 73 68 73 68 70' stroke='%23ffffff' stroke-opacity='0.10' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C!-- Open Book --%3E%3Cpath d='M90 60L90 35C100 32 110 35 110 35C110 35 120 32 130 35L130 60C120 57 110 60 110 60C110 60 100 57 90 60ZM110 35L110 60M96 42L108 42M96 48L108 48M112 42L124 42M112 48L124 48' stroke='%23ffffff' stroke-opacity='0.10' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C!-- Pencil --%3E%3Cpath d='M165 22L178 35L167 60L154 47ZM183 38L170 51M167 60L165 67L172 64Z' stroke='%23ffffff' stroke-opacity='0.09' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C!-- Ruler --%3E%3Cpath d='M14 105L14 162L30 162L30 105ZM14 115L20 115M14 125L26 125M14 135L20 135M14 145L26 145M14 155L20 155' stroke='%23ffffff' stroke-opacity='0.09' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C!-- 5-point Star --%3E%3Cpath d='M196 86L200 99L214 99L203 107L207 120L196 112L185 120L189 107L178 99L192 99Z' stroke='%23ffffff' stroke-opacity='0.10' stroke-width='1.6' stroke-linejoin='round'/%3E%3C!-- Magnifying Glass --%3E%3Ccircle cx='55' cy='148' r='17' stroke='%23ffffff' stroke-opacity='0.09' stroke-width='1.6'/%3E%3Cline x1='67' y1='160' x2='80' y2='173' stroke='%23ffffff' stroke-opacity='0.09' stroke-width='3.2'/%3E%3C!-- Lightbulb --%3E%3Cpath d='M151 113C151 102 161 97 171 102C181 107 181 120 174 127L171 135L161 135L158 127C151 120 151 124 151 113ZM159 135L159 141M173 135L173 141M159 141L173 141' stroke='%23ffffff' stroke-opacity='0.10' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C!-- Trophy --%3E%3Cpath d='M82 205L138 205L133 195L133 183C133 175 126 169 118 167L118 160L102 160L102 167C94 169 87 175 87 183L87 195ZM87 177L77 177C72 177 70 170 77 165M133 177L143 177C148 177 150 170 143 165' stroke='%23ffffff' stroke-opacity='0.09' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
