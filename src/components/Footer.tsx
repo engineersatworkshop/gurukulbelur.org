@@ -52,7 +52,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} Gurukul English Medium School. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">Made By Engineer's Workshop...</p>
+          <p className="mt-2 md:mt-0">Made by Engineers Workshop...</p>
         </div>
       </div>
     </footer>
