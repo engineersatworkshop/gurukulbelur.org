@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center space-x-3">
-          <div className="w-14 h-14 flex items-center justify-center relative">
+          <div className="w-14 h-14 flex items-center justify-center">
             <Image src="/main logopng.png" alt="Gurukul Logo" width={56} height={56} className="w-full h-full object-contain" />
           </div>
           <div>
@@ -51,7 +51,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav Links */}
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden xl:flex items-center space-x-6">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -84,7 +84,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="lg:hidden">
+        <div className="xl:hidden">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="text-brand-navy p-2"
@@ -101,7 +101,7 @@ export default function Navbar() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="lg:hidden bg-white border-t overflow-hidden absolute w-full shadow-lg"
+            className="xl:hidden bg-white border-t overflow-hidden absolute w-full shadow-lg"
           >
             <div className="flex flex-col px-4 py-4 space-y-4">
               {navLinks.map((link) => (

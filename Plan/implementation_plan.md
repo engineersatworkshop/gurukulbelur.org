@@ -31,7 +31,7 @@ Build a complete, single-page React application for Gurukul English Medium Co-ed
 - Structured with a two-column layout consisting of animated text and sliding glass-effect cards using `staggerChildren` and `whileHover`.
 
 #### [NEW] `src/components/FeatureStrip.jsx`
-- Overlay card feature stripping key highlights of the school (ICSE, Co-ed, 6 Days, 100%).
+- Overlay card feature stripping key highlights of the school (CICSE, Co-ed, 6 Days, 100%).
 
 #### [NEW] `src/components/About.jsx`
 - Detailed introduction offering text and a 2x2 pillar grid with left gold borders. Includes placeholder images that bounce into view.

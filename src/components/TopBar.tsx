@@ -13,7 +13,7 @@ export default function TopBar() {
           </div>
           <div className="flex items-center space-x-2">
             <Clock size={14} className="text-yellow-300" />
-            <span>Mon-Sat: 8:15 AM - 2:30 PM</span>
+            <span>Mon-Fri: 8:15 AM - 2:30 PM</span>
           </div>
         </div>
         <div className="flex items-center space-x-4">

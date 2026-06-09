@@ -20,7 +20,7 @@ const itemVariants = {
 const features = [
   {
     icon: <Award className="text-brand-gold w-8 h-8" />,
-    title: 'ICSE Affiliated',
+    title: 'CISCE Affiliated',
     desc: 'Excellence in education standards',
   },
   {

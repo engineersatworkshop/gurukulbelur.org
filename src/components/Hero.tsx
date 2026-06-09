@@ -30,7 +30,7 @@ export default function Hero() {
       }} />
 
       <div className="container mx-auto px-4 z-10 py-16 lg:py-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[90vh] pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[90vh] pb-32 lg:pb-40">
           {/* Left Text Column */}
           <motion.div
             variants={heroVariants}
@@ -42,7 +42,7 @@ export default function Hero() {
             <motion.div variants={itemVariants} className="bg-white/15 border border-white/30 px-4 py-1.5 rounded-full text-white text-sm font-semibold tracking-wider uppercase mb-6 backdrop-blur-sm">
               Admissions Open 2026-2027
             </motion.div>
-            
+
             <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-4 text-white drop-shadow-md">
               Shaping <span className="text-yellow-300 drop-shadow-sm">Young Minds</span> <br />for a Brighter Future
             </motion.h1>
@@ -80,7 +80,7 @@ export default function Hero() {
                 <BookOpen size={28} />
               </div>
               <div>
-                <h3 className="font-serif text-xl font-bold">ICSE Curriculum</h3>
+                <h3 className="font-serif text-xl font-bold">CISCE Curriculum</h3>
                 <p className="text-sm text-gray-300">Comprehensive and structured syllabus</p>
               </div>
             </motion.div>

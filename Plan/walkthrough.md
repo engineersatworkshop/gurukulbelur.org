@@ -17,7 +17,7 @@ I have successfully built a complete React application for **Gurukul English Med
 - **Content Sections**:
   - [Hero](file:///f:/Gurukul/src/components/Hero.jsx#24-129): Dynamic intro section standing at 90vh, utilizing staggered child animations and responsive glassmorphism cards highlighting core offerings.
   - [FeatureStrip](file:///f:/Gurukul/src/components/FeatureStrip.jsx#41-73): Overlapping animated card showing four quick highlights.
-  - [About](file:///f:/Gurukul/src/components/About.jsx#18-108): Two-column layout integrating an animated ICSE badge, text, and a pristine 4-pillar grid.
+  - [About](file:///f:/Gurukul/src/components/About.jsx#18-108): Two-column layout integrating an animated CICSE badge, text, and a pristine 4-pillar grid.
   - [Academics](file:///f:/Gurukul/src/components/Academics.jsx#40-87): Responsive 4-card grid offering robust hover interactions.
   - [NoticeBoard](file:///f:/Gurukul/src/components/NoticeBoard.jsx#45-119): Staggered slide-in notice list with customized gold date enclosures.
   - [Timings](file:///f:/Gurukul/src/components/Timings.jsx#5-93): High-contrast schedule table beside a descriptive navy box.
