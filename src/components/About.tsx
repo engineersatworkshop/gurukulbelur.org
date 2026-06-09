@@ -126,7 +126,7 @@ export default function About() {
                 quote: "“Mrs. Malti Devi Singh had a dream of establishing a school with a blend of ethic values and modern ideas. From a very tender age, she had shown what could be achieved with intelligence, dedication, and self-discipline.”"
               },
               {
-                role: "THE CHAIRMAN",
+                role: "THE PRINCIPAL",
                 name: "Mr. Arun Kumar Singh",
                 avatar: <Image src="/management head/Mr. Arun Kumar Singh.jpg" alt="Mr. Arun Kumar Singh" width={112} height={112} className="w-full h-full object-cover rounded-full" />,
                 quote: "“Mr. Arun Kumar Singh developed an intense desire to educate young minds to grow up to be perfect citizens and face the challenges of tomorrow, laying a firm foundation for Gurukul Co-Ed School looking 'Beyond the Lines'.”"

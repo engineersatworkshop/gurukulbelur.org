@@ -30,7 +30,7 @@ export default function Hero() {
       }} />
 
       <div className="container mx-auto px-4 z-10 py-16 lg:py-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[90vh] pb-32 lg:pb-40">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[90vh] pb-16">
           {/* Left Text Column */}
           <motion.div
             variants={heroVariants}
@@ -80,7 +80,7 @@ export default function Hero() {
                 <BookOpen size={28} />
               </div>
               <div>
-                <h3 className="font-serif text-xl font-bold">CISCE Curriculum</h3>
+                <h3 className="font-serif text-xl font-bold">ICSE Curriculum</h3>
                 <p className="text-sm text-gray-300">Comprehensive and structured syllabus</p>
               </div>
             </motion.div>

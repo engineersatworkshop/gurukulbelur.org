@@ -2,26 +2,45 @@
 
 @theme {
   /* ── Exact colors from the brochure cover image ── */
-  --color-brand-navy:    #1B3178; /* Dark navy — heading text in brochure */
-  --color-brand-gold:    #e8a020; /* Gold accent — trophy/award color */
-  --color-brand-red:     #E82529; /* Exact scarlet red — top half of cover */
-  --color-brand-blue:    #29ABE2; /* Exact sky blue  — bottom half of cover */
-  --color-brand-offwhite:#f7f5f0;
+  --color-brand-navy: #1B3178;
+  /* Dark navy — heading text in brochure */
+  --color-brand-gold: #e8a020;
+  /* Gold accent — trophy/award color */
+  --color-brand-red: #E82529;
+  /* Exact scarlet red — top half of cover */
+  --color-brand-blue: #29ABE2;
+  /* Exact sky blue  — bottom half of cover */
+  --color-brand-offwhite: #f7f5f0;
 
   /* Light tint backgrounds (used as section/card backgrounds) */
-  --color-brand-bg-blue:  #E8F7FD; /* Very light sky blue tint */
-  --color-brand-bg-yellow:#fefdf0;
+  --color-brand-bg-blue: #E8F7FD;
+  /* Very light sky blue tint */
+  --color-brand-bg-yellow: #fefdf0;
   --color-brand-bg-green: #f0fdf4;
-  --color-brand-bg-red:   #FEF0F0; /* Very light red tint */
+  --color-brand-bg-red: #FEF0F0;
+  /* Very light red tint */
 
   --font-serif: var(--font-serif);
-  --font-sans:  var(--font-sans);
+  --font-sans: var(--font-sans);
 }
 
 @layer base {
-  html { scroll-behavior: smooth; }
-  body { @apply font-sans text-gray-800 bg-white m-0 p-0 antialiased; }
-  h1, h2, h3, h4, h5, h6 { @apply font-serif; }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-gray-800 bg-white m-0 p-0 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
