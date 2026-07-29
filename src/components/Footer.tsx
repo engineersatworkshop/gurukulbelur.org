@@ -9,11 +9,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Brand Block */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="flex items-center space-x-3 mb-2">
               <div className="w-12 h-12 flex items-center justify-center relative">
                 <Image src="/main logopng.png" alt="Gurukul Logo" width={48} height={48} className="w-full h-full object-contain" />
               </div>
-              <h2 className="font-serif text-xl md:text-2xl font-bold text-white leading-tight">Gurukul English Medium Co-Ed School</h2>
+              <div>
+                <h2 className="font-serif text-xl md:text-2xl font-bold text-white leading-tight">Gurukul English Medium Co-Ed School</h2>
+                <p className="text-xs font-semibold text-yellow-300 mt-1">Run and Managed by : Gurukul Educational Trust</p>
+              </div>
             </div>
             <p className="text-brand-gold italic font-serif mb-4">&ldquo;Vidya Dadati Vinayam&rdquo;</p>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">

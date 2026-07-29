@@ -45,6 +45,9 @@ export default function Navbar() {
               Gurukul English Medium Co-Ed School
             </h1>
             <p className="text-xs font-sans tracking-wide" style={{ color: '#E82529', fontWeight: 600 }}>
+              Run and Managed by : Gurukul Educational Trust
+            </p>
+            <p className="text-[11px] font-sans tracking-wide text-gray-500 font-medium">
               CISCE Affiliated · Howrah
             </p>
           </div>
